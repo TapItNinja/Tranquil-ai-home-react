@@ -1,0 +1,139 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 120px;
+    color: white;
+  }
+  
+  .nav-logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .nav-logo:hover {
+    color: #ff8a75; /* Adjust the hover color as needed */
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 90px;
+  }
+  
+  .nav-menu li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu li:hover {
+    color: #ff8a75; /* Adjust the hover color as needed */
+  }
+  
+  .nav-contact {
+    border-radius: 50px;
+    padding: 10px 38px;
+    background: #262626; /* Dark background */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-contact:hover {
+    background: #262626; /* Adjust the hover background color as needed */
+    color: #ff8a75;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure pop-up is on top of everything */
+  }
+  
+  .popup-content {
+    background-color: #262626; /* Dark background */
+    padding: 20px;
+    font-family: Poppins;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease; /* Optional animation for fade-in effect */
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .close:hover {
+    color: #ff8a75; /* Hover color for close button */
+  }
+  
+  .popup-content h2 {
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .popup-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-input,
+  .form-textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .form-textarea {
+    resize: none; /* Prevent textarea from being resizable */
+    height: 120px; /* Set initial height */
+  }
+  
+  .form-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff8a75;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .form-button:hover {
+    background-color: #ff6347; /* Darker shade for hover effect */
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
